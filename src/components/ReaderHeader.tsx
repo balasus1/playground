@@ -56,11 +56,11 @@ export const ReaderHeader = ({ toc }: { toc: Links }) => {
       >
         { Actions.ActionIcons }
 
-      {/*
+      {
         <OverflowMenu>
           { Actions.MenuItems }
         </OverflowMenu>
-      */}
+      }
     
       </div>
     </header>

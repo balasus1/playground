@@ -28,8 +28,8 @@
 .container button {
   width: var(--arrow-size, 40px);
   /* height: var(--arrow-size, 40px); */
-  height: 40vh;
-  height: 40dvh;
+  height: 5vh;
+  height: 5dvh;
   border-radius: 5px;
   pointer-events: auto;
   box-sizing: border-box;

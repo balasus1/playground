@@ -179,8 +179,8 @@ export const RSPrefs = {
     displayOrder: [
       ActionKeys.settings,
       ActionKeys.fullscreen,
-    //  ActionKeys.toc,
-    //  ActionKeys.jumpToPosition
+      ActionKeys.toc,
+      ActionKeys.jumpToPosition
     ],
     [ActionKeys.settings]: {
       visibility: ActionVisibility.always,
