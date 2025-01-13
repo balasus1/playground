@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image'
 import { useRouter } from 'next/navigation';
+import { encode2Base64URL } from '../helpers/utils';
 import bookGridStyle from '../components/assets/styles/bookgrid.module.css';
 
 type BookDetails = {
@@ -37,8 +38,8 @@ export default function BookGrid(): JSX.Element {
   }, []);
 
   const handleBookClick = (filename: string): void => {
-    console.log(`fileName: ${filename}`);
-    const encodedFilename = btoa(filename).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+    console.log(filename);
+    const encodedFilename = encode2Base64URL(filename);
     router.push(`/read?book=http://localhost:15080/${encodedFilename}/manifest.json`);
   };
 
