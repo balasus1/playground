@@ -26,7 +26,7 @@ async function getBooks(count: number): Promise<Book[]> {
       id: 'default',
       title: 'Unknown title',
       author: 'Unknown author',
-      cover_image: 'https://random-image-pepebigotes.vercel.app/api/random-image',
+      cover_image: `https://picsum.photos/250/300?random=${Math.random()}`,
       publication_year: 1900,
       genre: ['General']
     });
@@ -45,6 +45,7 @@ export async function GET(): Promise<Response> {
 
     const mappedFiles = files.map((file, index) => ({
       ...books[index],
+      cover_image: `https://picsum.photos/250/300?random=${Math.random()}`,
       filename: file
     }));
     // Return the list of files

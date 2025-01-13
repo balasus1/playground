@@ -18,7 +18,6 @@ export default function BookGrid(): JSX.Element {
   const router = useRouter();
   const [books, setBooks] = useState<BookDetails[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
-  //const router = useRouter();
 
   useEffect(() => {
     const fetchBooks = async (): Promise<void> => {

@@ -11,7 +11,7 @@ const nextConfig = {
     webpackBuildWorker: true,
   },
   images: {
-    domains: ['picsum.photos', 'fakeimg.pl'],
+    domains: ['picsum.photos'],
   },
   webpack(config) {
     const fileLoaderRule = config.module.rules.find((rule) =>
